@@ -6,11 +6,11 @@ public class PrimeDigitRangeChecker {
         if (a > b) {
             throw new IllegalStateException();
         }
-        if (b == 1) {
+        if (b < 2) {
             return false;
         }
 
-        for (int i = a; i <= b; i++) {
+        for (int i = Math.max(a, 2); i <= b; i++) {
             if (isPrime(i)) {
                 return true;
             }
