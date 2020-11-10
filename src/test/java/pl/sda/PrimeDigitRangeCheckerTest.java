@@ -42,6 +42,6 @@ class PrimeDigitRangeCheckerTest {
                 Arguments.arguments(100,100, false),
                 Arguments.arguments(-10,2, true),
                 Arguments.arguments(-20,1, false)
-        )
+        );
     }
 }
